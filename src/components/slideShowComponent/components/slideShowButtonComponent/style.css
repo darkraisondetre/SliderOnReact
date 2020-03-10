@@ -1,0 +1,8 @@
+.slideShowButton{
+    font-size: 52px;
+    color: darkslategrey;
+}
+
+.slideShowButton:hover{
+    color: #3a7373;
+}

@@ -15,20 +15,20 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-     <div className="wrapper">
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/slider1">
-          <SlideShow/>
-        </Route>
-        <Route path="/slider2">
-          <SlideShowOther/>
-        </Route>
-      </Switch>
-     </div>
-    </Router>
+        <div className="wrapper">
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/slider1">
+              <SlideShow/>
+            </Route>
+            <Route path="/slider2">
+              <SlideShowOther/>
+            </Route>
+          </Switch>
+        </div>
+        </Router>
       </div>
     );
   }

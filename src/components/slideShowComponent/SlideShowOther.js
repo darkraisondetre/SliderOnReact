@@ -6,7 +6,7 @@ import { nextImage, prevImage } from '../../actions/slideShowActions';
 import "./style.css";
 
 import SlideShowButton from "./components/slideShowButtonComponent/slideShowButton";
-import Screen from "./components/screenComponent/Screen";
+import Screen2 from "./components/screenComponent/Screen2";
 
 import {
   BrowserRouter as Router,
@@ -23,7 +23,7 @@ class SlideShowOther extends Component {
         <div className="title">This is Slider 2</div>  
         <div className="topOfSlider">
         <SlideShowButton handleClick={() => this.props.prevImage(currentImageID.currentImageID)} dir={"left"} />
-        <Screen currentImageID={currentImageID} />
+        <Screen2 currentImageID={currentImageID} />
         <SlideShowButton handleClick={() => this.props.nextImage(currentImageID.currentImageID)} dir={"right"} />
         </div>
       <div className="btnContainer">

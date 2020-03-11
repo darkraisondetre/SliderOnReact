@@ -1,16 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import "./style.css";
 
-class SlideShowButton extends Component {
-  render() {
-    let arrowDirection = this.props.dir;
-    let arrowButtonClassName = `fas fa-arrow-circle-${arrowDirection}`;
+function SlideShowButton(props) {
     return (
       <div className="slideShowButton">
-        <i onClick={this.props.handleClick} className={arrowButtonClassName} />
+        <i onClick={props.handleClick} className={`fas fa-arrow-circle-${props.dir}`} />
       </div>
     );
-  }
 }
 
 export default SlideShowButton;

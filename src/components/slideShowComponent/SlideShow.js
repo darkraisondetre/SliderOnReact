@@ -45,9 +45,9 @@ class SlideShow extends Component {
 }
 
 function mapStateToProps(state) {
-  return {
+  return ({
     currentImageID: state.currentImageID
-  };
+  });
 }
 
 function matchDispatchToProps(dispatch) {

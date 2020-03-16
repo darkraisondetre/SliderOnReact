@@ -3,13 +3,17 @@ import "./style.css";
 import { objUrl } from "../../../../urls";
 
 class Screen2 extends Component {
-  render() {
-    let styles = {
-      backgroundImage: `url(${objUrl[`url${this.props.currentImageID.currentImageID}`]})`
+  styles = () => {
+    return {
+      backgroundImage: `url(${
+        objUrl[`url${this.props.currentImageID.currentImageID}`]
+      })`
     };
+  };
+  render() {
     return (
       <div
-        style={styles}
+        style={this.styles()}
         className="col-7 col-sm-9 col-md-6 screen"
         id="imgCont"
       />
